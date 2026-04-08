@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Become a Partner | HomeResQ Technician Signup</title>
+    <meta
+      name="description"
+      content="Register as a technician partner with HomeResQ and provide trusted home services."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/technician-signup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="partner-page">
+      <section class="partner-hero">
+        <a class="back-link" href="index.html">&larr; Back to HomeResQ</a>
+        <p class="eyebrow">Become a Partner</p>
+        <h1>Register as Technician</h1>
+        <div class="hero-benefit-grid">
+          <div class="benefit-tile">
+            <strong>Verified profile</strong>
+            <span>Service details, experience, and coverage reviewed in one place.</span>
+          </div>
+          <div class="benefit-tile">
+            <strong>Faster screening</strong>
+            <span>A structured registration flow helps the team review applications quickly.</span>
+          </div>
+          <div class="benefit-tile">
+            <strong>Clear next steps</strong>
+            <span>Qualified applicants are contacted directly after internal verification.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="partner-layout">
+        <form id="technicianSignupForm" class="partner-form">
+          <h2>Technician Registration Form</h2>
+
+          <label>
+            Full Name
+            <input type="text" name="fullName" placeholder="Enter full name" required />
+          </label>
+
+          <label>
+            Phone Number
+            <input
+              type="tel"
+              name="phone"
+              inputmode="numeric"
+              maxlength="10"
+              pattern="[0-9]{10}"
+              placeholder="Enter 10-digit phone number"
+              required
+            />
+          </label>
+
+          <label>
+            Email Address
+            <input type="email" name="email" placeholder="Enter email address" required />
+          </label>
+
+          <label>
+            Primary Service
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option>Electrician</option>
+              <option>Plumber</option>
+              <option>AC Service And Repair</option>
+              <option>Refrigerator</option>
+              <option>Water Purifier</option>
+              <option>Carpenter</option>
+              <option>Cleaning Services</option>
+            </select>
+          </label>
+
+          <label>
+            Experience
+            <select name="experience" required>
+              <option value="">Select experience</option>
+              <option>0-1 Years</option>
+              <option>2-4 Years</option>
+              <option>5-8 Years</option>
+              <option>8+ Years</option>
+            </select>
+          </label>
+
+          <label>
+            Service Pin Codes
+            <input type="text" name="pincodes" placeholder="e.g. 560001, 560002" required />
+          </label>
+
+          <label>
+            Address
+            <textarea name="address" rows="3" placeholder="Enter full address" required></textarea>
+          </label>
+
+          <label>
+            Skills / Certifications
+            <textarea
+              name="skills"
+              rows="4"
+              placeholder="Licenses, certifications, tools, specializations"
+              required
+            ></textarea>
+          </label>
+
+          <button type="submit" class="primary-btn">Submit Registration</button>
+          <p id="technicianSignupStatus" class="form-status" aria-live="polite">
+            Add your SMS API endpoint in <code>technician-signup.js</code> to enable phone confirmations.
+          </p>
+          <p class="form-note">HomeResQ will review your profile and contact you after verification.</p>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/technician-signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply | HomeResQ Careers</title>
+    <meta
+      name="description"
+      content="Apply for a current HomeResQ opening and submit your profile for review."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/career-apply.css" />
+  </head>
+  <body>
+    <main class="application-page">
+      <section class="application-shell">
+        <a href="careers.html" class="back-link">&larr; Back to Careers</a>
+
+        <div class="apply-hero">
+          <p class="eyebrow">Job application</p>
+          <h1>Apply for <span id="selectedRoleLabel">this role</span></h1>
+          <div class="apply-highlights" aria-label="Application highlights">
+            <span>Fast review</span>
+            <span>Role-specific application</span>
+            <span>Professional onboarding</span>
+          </div>
+        </div>
+
+        <form id="careerApplicationForm" class="application-form">
+          <input type="hidden" name="subject" value="Application Received" />
+          <input
+            type="hidden"
+            name="email_body"
+            value="Thank you for applying to the Home Rescue Project. We have successfully received your application. Our team will review it and contact you soon. Regards, Team Home Rescue"
+          />
+          <input type="hidden" name="reply_to" value="" />
+
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Enter full name" required />
+          </label>
+
+          <label>
+            Email Address
+            <input type="email" name="email" placeholder="Enter email address" required />
+          </label>
+
+          <label>
+            Applying For
+            <input id="selectedRoleInput" type="text" name="role" readonly required />
+          </label>
+
+          <label>
+            Phone Number
+            <input
+              type="tel"
+              name="phone"
+              inputmode="numeric"
+              maxlength="10"
+              pattern="[0-9]{10}"
+              placeholder="Enter 10-digit phone number"
+              required
+            />
+          </label>
+
+          <label>
+            Submit Your Resume
+            <input
+              type="file"
+              name="resume_file"
+              accept=".pdf,.doc,.docx"
+              required
+            />
+          </label>
+
+          <label>
+            Short Note
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Share a short introduction"
+            ></textarea>
+          </label>
+
+          <button type="submit" class="primary-btn">Submit Application</button>
+        </form>
+      </section>
+    </main>
+
+    <div id="applicationPopup" class="popup hidden" aria-hidden="true">
+      <div class="popup-backdrop" data-close-popup="true"></div>
+      <div class="popup-panel" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+        <button id="closePopupBtn" class="popup-close" type="button" aria-label="Close">&times;</button>
+        <p class="eyebrow">Application received</p>
+        <h2 id="popupTitle">Thank you for applying to the Home Rescue Project &#128658;</h2>
+        <p>We have successfully received your application. Our team will review it and contact you soon.</p>
+        <p>Regards,<br />Team Home Rescue</p>
+        <button id="popupOkBtn" class="primary-btn" type="button">OK</button>
+      </div>
+    </div>
+
+    <script src="js/careers-config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/career-apply.js"></script>
+  </body>
+</html>

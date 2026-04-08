@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeResQ | Emergency Home Services</title>
+    <meta
+      name="description"
+      content="Emergency home services platform for electrical issues, gas leaks, and plumbing repairs with pincode-based dispatch."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a href="#top" class="brand">
+          <span class="brand-mark">HR</span>
+          <span>
+            <strong>HomeResQ</strong>
+            <small>Emergency Home Support</small>
+          </span>
+        </a>
+
+        <nav class="top-nav">
+          <a href="#services">Services</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#dispatch">Book Now</a>
+          <button id="openAuthBtn" class="nav-cta" type="button">Login</button>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Fast home emergency response</p>
+            <h1>Electrical, gas, and plumbing help dispatched by pincode.</h1>
+            <p class="hero-text">
+              A responsive home-service platform that lets residents sign in,
+              report urgent household faults, and get a verified technician
+              assigned quickly based on local service availability.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-btn" href="#dispatch">Request Emergency Help</a>
+              <button class="secondary-btn" id="heroDemoBtn" type="button">
+                View Demo Login
+              </button>
+            </div>
+
+            <div class="hero-stats">
+              <article>
+                <strong>12 min</strong>
+                <span>Average assignment time</span>
+              </article>
+              <article>
+                <strong>120+</strong>
+                <span>Certified field experts</span>
+              </article>
+              <article>
+                <strong>24/7</strong>
+                <span>Emergency booking support</span>
+              </article>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <div class="status-card">
+              <p>Live Dispatch Board</p>
+              <ul>
+                <li><span class="pulse"></span> Electrician assigned in 560001</li>
+                <li><span class="pulse"></span> Gas safety unit en route to 110034</li>
+                <li><span class="pulse"></span> Plumbing repair completed in 500081</li>
+              </ul>
+            </div>
+            <div class="coverage-card">
+              <h2>Why it matters</h2>
+              <p>
+                Users avoid unsafe travel and long searches during emergencies.
+                The app connects them to the nearest qualified professional with
+                clear updates and trusted support.
+              </p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="services" id="services">
+          <div class="section-heading">
+            <p class="eyebrow">Service catalog</p>
+            <h2>Choose the service you need. We will dispatch a nearby technician instantly.</h2>
+          </div>
+
+          <p class="services-note">
+            Click any service name to auto-fill it in the booking form.
+          </p>
+
+          <div class="service-grid service-grid-catalog">
+            <button class="service-card active compact" type="button" data-service="AC Service And Repair"><span class="service-icon">❄️</span><span>AC Service And Repair</span></button>
+            <button class="service-card compact" type="button" data-service="Painting & Waterproofing"><span class="service-icon">🎨</span><span>Painting & Waterproofing</span></button>
+            <button class="service-card compact" type="button" data-service="Wall Makeover By Revamp"><span class="service-icon">🧱</span><span>Wall Makeover By Revamp</span></button>
+            <button class="service-card compact" type="button" data-service="Refrigerator"><span class="service-icon">🧊</span><span>Refrigerator</span></button>
+            <button class="service-card compact" type="button" data-service="Chimney"><span class="service-icon">🏠</span><span>Chimney</span></button>
+            <button class="service-card compact" type="button" data-service="Electrician"><span class="service-icon">⚡</span><span>Electrician</span></button>
+            <button class="service-card compact" type="button" data-service="Spa For Women"><span class="service-icon">💆</span><span>Spa For Women</span></button>
+            <button class="service-card compact" type="button" data-service="Water Purifier"><span class="service-icon">🚰</span><span>Water Purifier</span></button>
+            <button class="service-card compact" type="button" data-service="Sofa & Carpet Cleaning"><span class="service-icon">🧼</span><span>Sofa & Carpet Cleaning</span></button>
+            <button class="service-card compact" type="button" data-service="Native Smart Locks"><span class="service-icon">🔐</span><span>Native Smart Locks</span></button>
+            <button class="service-card compact" type="button" data-service="Salon Classic"><span class="service-icon">💇</span><span>Salon Classic</span></button>
+            <button class="service-card compact" type="button" data-service="Washing Machine"><span class="service-icon">🫧</span><span>Washing Machine</span></button>
+            <button class="service-card compact" type="button" data-service="Salon Prime For Kids & Men"><span class="service-icon">👨</span><span>Salon Prime For Kids & Men</span></button>
+            <button class="service-card compact" type="button" data-service="Native Water Purifier"><span class="service-icon">💧</span><span>Native Water Purifier</span></button>
+            <button class="service-card compact" type="button" data-service="Plumber"><span class="service-icon">🔧</span><span>Plumber</span></button>
+            <button class="service-card compact" type="button" data-service="Salon Prime"><span class="service-icon">✂️</span><span>Salon Prime</span></button>
+            <button class="service-card compact" type="button" data-service="Bathroom & Kitchen Cleaning"><span class="service-icon">🧽</span><span>Bathroom & Kitchen Cleaning</span></button>
+            <button class="service-card compact" type="button" data-service="Carpet Cleaning"><span class="service-icon">🪄</span><span>Carpet Cleaning</span></button>
+            <button class="service-card compact" type="button" data-service="Air Cooler"><span class="service-icon">🌬️</span><span>Air Cooler</span></button>
+            <button class="service-card compact" type="button" data-service="Rooms/ Walls Painting"><span class="service-icon">🖌️</span><span>Rooms/ Walls Painting</span></button>
+            <button class="service-card compact" type="button" data-service="Plumbers_amazon"><span class="service-icon">🪠</span><span>Plumbers_amazon</span></button>
+            <button class="service-card compact" type="button" data-service="Wall Panels Installation"><span class="service-icon">🪵</span><span>Wall Panels Installation</span></button>
+            <button class="service-card compact" type="button" data-service="Festival Lights Installation"><span class="service-icon">💡</span><span>Festival Lights Installation</span></button>
+            <button class="service-card compact" type="button" data-service="Laptop"><span class="service-icon">💻</span><span>Laptop</span></button>
+            <button class="service-card compact" type="button" data-service="Microwave Repair"><span class="service-icon">📦</span><span>Microwave Repair</span></button>
+            <button class="service-card compact" type="button" data-service="Painting Video Consultation"><span class="service-icon">📹</span><span>Painting Video Consultation</span></button>
+            <button class="service-card compact" type="button" data-service="Furniture Assembly"><span class="service-icon">🪑</span><span>Furniture Assembly</span></button>
+            <button class="service-card compact" type="button" data-service="Stove"><span class="service-icon">🍳</span><span>Stove</span></button>
+            <button class="service-card compact" type="button" data-service="Microwave Video Consult"><span class="service-icon">🎥</span><span>Microwave Video Consult</span></button>
+            <button class="service-card compact" type="button" data-service="Painting Services"><span class="service-icon">🪣</span><span>Painting Services</span></button>
+            <button class="service-card compact" type="button" data-service="Walls & Rooms Painting"><span class="service-icon">🏡</span><span>Walls & Rooms Painting</span></button>
+            <button class="service-card compact" type="button" data-service="Geyser"><span class="service-icon">♨️</span><span>Geyser</span></button>
+            <button class="service-card compact" type="button" data-service="Massage For Men Ayurveda"><span class="service-icon">🛏️</span><span>Massage For Men Ayurveda</span></button>
+            <button class="service-card compact" type="button" data-service="Television"><span class="service-icon">📺</span><span>Television</span></button>
+            <button class="service-card compact" type="button" data-service="Ikea Furniture Assembly"><span class="service-icon">📦</span><span>Ikea Furniture Assembly</span></button>
+            <button class="service-card compact" type="button" data-service="Spa Luxe"><span class="service-icon">🌸</span><span>Spa Luxe</span></button>
+            <button class="service-card compact" type="button" data-service="Salon Royale For Kids & Men"><span class="service-icon">👦</span><span>Salon Royale For Kids & Men</span></button>
+            <button class="service-card compact" type="button" data-service="Massage Therapy For Men Royale"><span class="service-icon">🧘</span><span>Massage Therapy For Men Royale</span></button>
+            <button class="service-card compact" type="button" data-service="Kitchen Cleaning"><span class="service-icon">🍽️</span><span>Kitchen Cleaning</span></button>
+            <button class="service-card compact" type="button" data-service="Carpenter"><span class="service-icon">🪚</span><span>Carpenter</span></button>
+            <button class="service-card compact" type="button" data-service="Hair Studio For Women"><span class="service-icon">💈</span><span>Hair Studio For Women</span></button>
+            <button class="service-card compact" type="button" data-service="Spa Ayurveda"><span class="service-icon">🌿</span><span>Spa Ayurveda</span></button>
+            <button class="service-card compact" type="button" data-service="Rooms/walls Painting"><span class="service-icon">🖍️</span><span>Rooms/walls Painting</span></button>
+            <button class="service-card compact" type="button" data-service="Full Home/ Move-in Cleaning"><span class="service-icon">🏘️</span><span>Full Home/ Move-in Cleaning</span></button>
+            <button class="service-card compact" type="button" data-service="Cockroach, Ant & General Pest Control"><span class="service-icon">🚫</span><span>Cockroach, Ant & General Pest Control</span></button>
+            <button class="service-card compact" type="button" data-service="Massage For Men"><span class="service-icon">🛌</span><span>Massage For Men</span></button>
+            <button class="service-card compact" type="button" data-service="Salon Luxe"><span class="service-icon">💄</span><span>Salon Luxe</span></button>
+            <button class="service-card compact" type="button" data-service="Nail Studio For Women"><span class="service-icon">💅</span><span>Nail Studio For Women</span></button>
+            <button class="service-card compact" type="button" data-service="Bathroom Cleaning"><span class="service-icon">🛁</span><span>Bathroom Cleaning</span></button>
+            <button class="service-card compact" type="button" data-service="Expert Counseling - Facials & Peels"><span class="service-icon">🧴</span><span>Expert Counseling - Facials & Peels</span></button>
+            <button class="service-card compact" type="button" data-service="Disinfection Services"><span class="service-icon">🧯</span><span>Disinfection Services</span></button>
+            <button class="service-card compact" type="button" data-service="Bed Bugs Control"><span class="service-icon">🐞</span><span>Bed Bugs Control</span></button>
+            <button class="service-card compact" type="button" data-service="Rentomojo Refrigerator Repair"><span class="service-icon">🧰</span><span>Rentomojo Refrigerator Repair</span></button>
+            <button class="service-card compact" type="button" data-service="Laser Doctor Consultation"><span class="service-icon">🩺</span><span>Laser Doctor Consultation</span></button>
+          </div>
+        </section>
+
+        <section class="process" id="how-it-works">
+          <div class="section-heading">
+            <p class="eyebrow">How it works</p>
+            <h2>A simple flow designed for urgency.</h2>
+          </div>
+
+          <div class="process-grid">
+            <article>
+              <span>01</span>
+              <h3>Login securely</h3>
+              <p>Create an account or sign in to save address, contact, and request history.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Select a service</h3>
+              <p>Choose electrical, gas, or plumbing support and describe the issue severity.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Enter pincode</h3>
+              <p>The system checks local coverage and assigns the nearest qualified professional.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Track dispatch</h3>
+              <p>View technician details, estimated arrival time, and priority level instantly.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="dispatch-section" id="dispatch">
+          <div class="dispatch-intro">
+            <p class="eyebrow">Book a request</p>
+            <h2>Dispatch an expert to your home now.</h2>
+            <p>
+             Enter your details and we will assign the nearest technician based on your pincode.
+            </p>
+          </div>
+
+          <div class="dispatch-layout">
+            <form id="dispatchForm" class="dispatch-form">
+              <label>
+                Full Name
+                <input id="name" name="name" type="text" placeholder="Enter your name" required />
+              </label>
+
+              <label>
+                Phone Number
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="10-digit contact number"
+                  pattern="[0-9]{10}"
+                  required
+                />
+              </label>
+
+              <label>
+                Postal Pin Code
+                <input
+                  id="pincode"
+                  name="pincode"
+                  type="text"
+                  inputmode="numeric"
+                  maxlength="6"
+                  placeholder="e.g. 743125"
+                  required
+                />
+              </label>
+
+              <label>
+                Service Type
+                <select id="serviceType" name="serviceType" required>
+                  <option value="AC Service And Repair">AC Service And Repair</option>
+                  <option value="Painting & Waterproofing">Painting & Waterproofing</option>
+                  <option value="Wall Makeover By Revamp">Wall Makeover By Revamp</option>
+                  <option value="Refrigerator">Refrigerator</option>
+                  <option value="Chimney">Chimney</option>
+                  <option value="Electrician">Electrician</option>
+                  <option value="Spa For Women">Spa For Women</option>
+                  <option value="Water Purifier">Water Purifier</option>
+                  <option value="Sofa & Carpet Cleaning">Sofa & Carpet Cleaning</option>
+                  <option value="Native Smart Locks">Native Smart Locks</option>
+                  <option value="Salon Classic">Salon Classic</option>
+                  <option value="Washing Machine">Washing Machine</option>
+                  <option value="Salon Prime For Kids & Men">Salon Prime For Kids & Men</option>
+                  <option value="Native Water Purifier">Native Water Purifier</option>
+                  <option value="Plumber">Plumber</option>
+                  <option value="Salon Prime">Salon Prime</option>
+                  <option value="Bathroom & Kitchen Cleaning">Bathroom & Kitchen Cleaning</option>
+                  <option value="Carpet Cleaning">Carpet Cleaning</option>
+                  <option value="Air Cooler">Air Cooler</option>
+                  <option value="Rooms/ Walls Painting">Rooms/ Walls Painting</option>
+                  <option value="Plumbers_amazon">Plumbers_amazon</option>
+                  <option value="Wall Panels Installation">Wall Panels Installation</option>
+                  <option value="Festival Lights Installation">Festival Lights Installation</option>
+                  <option value="Laptop">Laptop</option>
+                  <option value="Microwave Repair">Microwave Repair</option>
+                  <option value="Painting Video Consultation">Painting Video Consultation</option>
+                  <option value="Furniture Assembly">Furniture Assembly</option>
+                  <option value="Stove">Stove</option>
+                  <option value="Microwave Video Consult">Microwave Video Consult</option>
+                  <option value="Painting Services">Painting Services</option>
+                  <option value="Walls & Rooms Painting">Walls & Rooms Painting</option>
+                  <option value="Geyser">Geyser</option>
+                  <option value="Massage For Men Ayurveda">Massage For Men Ayurveda</option>
+                  <option value="Television">Television</option>
+                  <option value="Ikea Furniture Assembly">Ikea Furniture Assembly</option>
+                  <option value="Spa Luxe">Spa Luxe</option>
+                  <option value="Salon Royale For Kids & Men">Salon Royale For Kids & Men</option>
+                  <option value="Massage Therapy For Men Royale">Massage Therapy For Men Royale</option>
+                  <option value="Kitchen Cleaning">Kitchen Cleaning</option>
+                  <option value="Carpenter">Carpenter</option>
+                  <option value="Hair Studio For Women">Hair Studio For Women</option>
+                  <option value="Spa Ayurveda">Spa Ayurveda</option>
+                  <option value="Rooms/walls Painting">Rooms/walls Painting</option>
+                  <option value="Full Home/ Move-in Cleaning">Full Home/ Move-in Cleaning</option>
+                  <option value="Cockroach, Ant & General Pest Control">Cockroach, Ant & General Pest Control</option>
+                  <option value="Massage For Men">Massage For Men</option>
+                  <option value="Salon Luxe">Salon Luxe</option>
+                  <option value="Nail Studio For Women">Nail Studio For Women</option>
+                  <option value="Bathroom Cleaning">Bathroom Cleaning</option>
+                  <option value="Expert Counseling - Facials & Peels">Expert Counseling - Facials & Peels</option>
+                  <option value="Disinfection Services">Disinfection Services</option>
+                  <option value="Bed Bugs Control">Bed Bugs Control</option>
+                  <option value="Rentomojo Refrigerator Repair">Rentomojo Refrigerator Repair</option>
+                  <option value="Laser Doctor Consultation">Laser Doctor Consultation</option>
+                </select>
+              </label>
+
+              <label>
+                Urgency Level
+                <select id="urgency" name="urgency" required>
+                  <option value="Critical">Critical</option>
+                  <option value="High">High</option>
+                  <option value="Moderate">Moderate</option>
+                </select>
+              </label>
+
+              <label>
+                Address
+                <textarea
+                  id="address"
+                  name="address"
+                  rows="3"
+                  placeholder="House / street / landmark"
+                  required
+                ></textarea>
+              </label>
+
+              <label>
+                Issue Description
+                <textarea
+                  id="issue"
+                  name="issue"
+                  rows="4"
+                  placeholder="Describe the emergency briefly"
+                  required
+                ></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button type="submit" class="primary-btn">Check Availability</button>
+                <button type="reset" class="ghost-btn">Reset</button>
+              </div>
+            </form>
+
+            <aside class="dispatch-output">
+              <div class="output-card">
+                <p class="output-title">Dispatch Preview</p>
+                <div id="availabilityBadge" class="availability neutral">Awaiting request</div>
+                <div id="dispatchResult" class="result-body">
+                  Submit the form to generate a technician assignment and ETA.
+                </div>
+              </div>
+
+              <div class="trust-card">
+                <h3>Platform highlights</h3>
+                <ul>
+                  <li>Verified professionals matched by area coverage</li>
+                  <li>Priority-aware emergency response handling</li>
+                  <li>Single dashboard for booking, tracking, and support</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="footer-brand-mark">HR</span>
+            <div class="footer-brand-text">
+              <strong>HomeResQ</strong>
+              <span>Emergency Home Support</span>
+            </div>
+          </div>
+
+          <div class="footer-top-links">
+            <a href="#services">Services</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#dispatch">Book Now</a>
+            <a href="careers.html">Career</a>
+            <a href="technician-signup.html">Technician</a>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-links">
+          <a href="careers.html">Careers at HomeResQ</a>
+          <a href="career-apply.html">Apply for Career</a>
+          <a href="technician-signup.html">Join as Technician</a>
+        </div>
+      </footer>
+    </div>
+
+    <div id="authModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+        <button id="closeAuthBtn" class="close-btn" type="button" aria-label="Close">×</button>
+
+        <div class="auth-header">
+    
+          <h2 id="authTitle">Login to HomeResQ</h2>
+          <p id="authSubtitle">Use the demo account or create a resident profile.</p>
+        </div>
+
+        <div class="auth-toggle">
+          <button class="toggle-btn active" type="button" data-mode="login">Login</button>
+          <button class="toggle-btn" type="button" data-mode="signup">Sign Up</button>
+        </div>
+
+        <form id="authForm" class="auth-form">
+          <label>
+            Email
+            <input id="authEmail" type="email" placeholder="name@example.com" required />
+          </label>
+
+          <label id="nameField" class="hidden-field">
+            Full Name
+            <input id="authName" type="text" placeholder="Your full name" />
+          </label>
+
+          <label>
+            Password
+            <input id="authPassword" type="password" placeholder="Enter password" required />
+          </label>
+
+          <button class="primary-btn full-width" type="submit" id="authSubmitBtn">Login</button>
+        </form>
+
+        <div class="auth-divider" aria-hidden="true">
+          <span>or continue with</span>
+        </div>
+
+        <div class="social-login">
+          <button id="googleLoginBtn" class="social-btn google-btn" type="button">
+            <span>G</span>
+            <span>Login with Google</span>
+          </button>
+          <button id="facebookLoginBtn" class="social-btn facebook-btn" type="button">
+            <span>f</span>
+            <span>Login with Facebook</span>
+          </button>
+        </div>
+
+        <div class="phone-login">
+          <p class="phone-title">Phone login / verification</p>
+          <label>
+            Phone Number
+            <input
+              id="authPhone"
+              type="tel"
+              inputmode="numeric"
+              maxlength="10"
+              placeholder="Enter 10-digit phone number"
+            />
+          </label>
+          <button id="phoneCallBtn" class="secondary-btn full-width" type="button">
+            Verify by Phone Call
+          </button>
+        </div>
+
+        <div class="demo-login">
+          <p>Demo credentials</p>
+          <button id="fillDemoBtn" class="ghost-btn full-width" type="button">
+            Fill Demo Account
+          </button>
+        </div>
+
+        <p class="auth-note">
+          Real Google login and email verification require Firebase project keys in the script file.
+        </p>
+        <p id="authMessage" class="auth-message"></p>
+      </div>
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
